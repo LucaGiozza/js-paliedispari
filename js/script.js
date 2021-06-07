@@ -18,7 +18,7 @@
 //  (usando una funzione) Dichiariamo chi ha vinto.
 
 
-var scelta = parseInt(prompt('scegli tra pari o dispari'));
+var scelta = prompt('scegli tra pari o dispari');
 var sceltaNumero = parseInt(prompt('inserisci un numero da 1 a 5'));
 
 
@@ -33,11 +33,21 @@ console.log(numeroPc);
 
 
  var x = myFunction(sceltaNumero, numeroPc );
-
+ 
 
  function myFunction(a, b) {
-   return a + b;
+    var risultato = a + b
+  return risultato;
  }
- console.log(x)
+ console.log(x);
 
-;
+somma();
+
+function somma(risultato){
+if(risultato % 2 != 0){
+    console.log('dispari');
+
+}else if(risultato % 2 == 0){
+    console.log('pari')
+}
+}
