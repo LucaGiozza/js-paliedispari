@@ -32,13 +32,13 @@ console.log(sceltaNumero);
 console.log(numeroPc);
 
 
-// var x = myFunction(sceltaNumero, numeroPc );
+ var x = myFunction(sceltaNumero, numeroPc );
 
 
-// function myFunction(a, b) {
-//   return sceltaNumero + numeroPc;
-// }
-// console.log(x)
+ function myFunction(a, b) {
+   return a + b;
+ }
+ console.log(x)
 
-var somma = sceltaNumero + numeroPc ;
-console.log(somma);
+// var somma = sceltaNumero + numeroPc ;
+// console.log(somma);
