@@ -54,8 +54,19 @@ console.log(numeroPc);
 
 if(x % 2 == 0   ){
     console.log('pari')
+    if(scelta == 'pari'){
+        console.log('hai vinto')
+    }else if(scelta =! 'pari'){
+        console.log('hai perso')
+    }
 }else if( x % 2 != 0){
     console.log('dispari')
+    if(scelta == 'dispari'){
+        console.log('hai vinto')
+    }else if(scelta =! 'dispari'){
+        console.log('hai perso')
+    }
+    
 
 }
 
