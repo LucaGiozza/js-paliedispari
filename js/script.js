@@ -18,4 +18,27 @@
 //  (usando una funzione) Dichiariamo chi ha vinto.
 
 
-var scelta = prompt()
+var scelta = prompt('scegli tra pari o dispari');
+var sceltaNumero = prompt('inserisci un numero da 1 a 5');
+
+
+var numeroPc = getRndInteger(1, 5);
+
+function getRndInteger(min, max){
+    return Math.floor(Math.random() * (max - min + 1 )) + min;
+}
+console.log(scelta);
+console.log(sceltaNumero);
+console.log(numeroPc);
+
+
+// var x = myFunction(sceltaNumero, numeroPc );
+
+
+// function myFunction(a, b) {
+//   return sceltaNumero + numeroPc;
+// }
+// console.log(x)
+
+var somma = sceltaNumero + numeroPc ;
+console.log(somma);
