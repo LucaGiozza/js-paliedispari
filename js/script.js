@@ -4,9 +4,18 @@
 // la parola inserita è palindroma
 
 
-// boh?
+var parola = prompt('inserisci una parola');
+var parolaDivisa = parola.split('');
+console.log(parolaDivisa);
 
+var parolaDivisa = parolaDivisa.reverse();
+console.log(parolaDivisa);
 
+if( parolaDivisa === parola){
+    console.log('è palindroma')
+}else{
+    console.log('non è palindroma')
+}
 
 
 //  L’utente sceglie pari
