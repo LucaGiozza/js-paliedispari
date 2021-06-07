@@ -4,29 +4,29 @@
 // la parola inserita è palindroma
 
 
-var parola = prompt('inserisci una parola');
+ var parola = prompt('inserisci una parola');
 
-var parolaInversa = invertiParola(parola);
+ var parolaInversa = invertiParola(parola);
 
-if(parola == parolaInversa){
-    console.log('la parola è palindroma');
-  } else {
-    console.log('la parola non è palindroma');
-  }
+ if(parola == parolaInversa){
+     console.log('la parola è palindroma');
+   } else {
+     console.log('la parola non è palindroma');
+   }
   
- function invertiParola(inversione){
-   var strInversa = inversione.split('').reverse().join('');  
-   return strInversa;
- }
+  function invertiParola(inversione){
+    var strInversa = inversione.split('').reverse().join('');  
+    return strInversa;
+  }
 
 
- L’utente sceglie pari
- o dispari e inserisce un numero da 1 a 5.
-  Generiamo un numero random (sempre da 1 a 5)
-   per il computer (usando una funzione). Sommiamo 
-   i due numeri. Stabiliamo se la somma dei due numeri
-   è pari o dispari
- (usando una funzione) Dichiariamo chi ha vinto.
+//   L’utente sceglie pari
+//  o dispari e inserisce un numero da 1 a 5.
+//   Generiamo un numero random (sempre da 1 a 5)
+//    per il computer (usando una funzione). Sommiamo 
+//    i due numeri. Stabiliamo se la somma dei due numeri
+//    è pari o dispari
+//  (usando una funzione) Dichiariamo chi ha vinto.
 
 
 var scelta = prompt('scegli tra pari o dispari');
@@ -52,19 +52,12 @@ console.log(numeroPc);
  }
  console.log(x);
 
-somma();
-
-function somma(risultato){
-if(risultato % 2 != 0){
-    console.log('dispari');
-
-}else if(risultato % 2 == 0){
+if(x % 2 == 0   ){
     console.log('pari')
-}
+}else if( x % 2 != 0){
+    console.log('dispari')
+
 }
 
-if(somma == scelta){
-    console.log('complimenti,hai vinto')
-}else{
-    console.log('mi dispiace, hai perso')
-}
+
+
