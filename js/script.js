@@ -5,16 +5,18 @@
 
 
 var parola = prompt('inserisci una parola');
-var parolaDivisa = parola.split('');
-console.log(parolaDivisa);
 
-var parolaDivisa = parolaDivisa.reverse();
-console.log(parolaDivisa);
+var parolaInversa = invertiParola(parola);
 
-if( parolaDivisa === parola){
-    console.log('è palindroma')
-}else{
-    console.log('non è palindroma')
+if(parola == parolaInversa){
+    console.log('la parola è palindroma');
+  } else {
+    console.log('la parola non è palindroma');
+  }
+  
+function invertiParola(inversione){
+  var strInversa = inversione.split('').reverse().join('');  
+  return strInversa;
 }
 
 
