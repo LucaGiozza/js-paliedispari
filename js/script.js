@@ -4,20 +4,60 @@
 // la parola inserita è palindroma
 
 
- var parola = prompt('inserisci una parola');
+//  var parola = prompt('inserisci una parola');
 
- var parolaInversa = invertiParola(parola);
+//  var parolaInversa = invertiParola(parola);
 
- if(parola == parolaInversa){
-     console.log('la parola è palindroma');
-   } else {
-     console.log('la parola non è palindroma');
-   }
+//  if(parola == parolaInversa){
+//      console.log('la parola è palindroma');
+//    } else {
+//      console.log('la parola non è palindroma');
+//    }
   
-  function invertiParola(inversione){
-    var strInversa = inversione.split('').reverse().join('');  
-    return strInversa;
-  }
+//   function invertiParola(inversione){
+//     var strInversa = inversione.split('').reverse().join('');  
+//     return strInversa;
+//   }
+
+
+// primo esercizio senza il reverse
+
+var parola = prompt('inserisci una parola');
+parola = parola.toLocaleLowerCase();
+
+var lunghezzaStringa = parola.length;
+ console.log(lunghezzaStringa);
+
+// console.log(parola[lunghezzaStringa - 1]);
+var inversa = '';
+
+for(var i = lunghezzaStringa -1; i >= 0; i--){
+    console.log(parola[i]);
+    inversa += parola[i];
+}
+console.log(inversa);
+
+
+var parolaInversa = inverti(parola);
+console.log(parolaInversa);
+
+if(parola == parolaInversa){
+    console.log('palindroma')
+
+}else {
+    console.log('non è palindroma')
+}
+
+function inverti(stringaTesto){
+    var inversa = '';
+    var lunghezzaStringa = stringaTesto.length;
+
+    for(var i = lunghezzaStringa -1; i >= 0; i--){
+        console.log(stringaTesto[i]);
+        inversa += stringaTesto[i];
+    } 
+    return inversa;
+}
 
 
 //   L’utente sceglie pari
@@ -98,9 +138,9 @@ function sommaNumeri(num1, num2){
 
 function sePari(sum){
     if(somma % 2 == 0){
-        return 'pari'
+        return 'pari';
     }else{
-        return 'dispari'
+        return 'dispari';
     }
 }
  
@@ -112,9 +152,9 @@ console.log(risultato);
 // document.getElementById('pari-dispari').innerHTML = somma ;
 
 if(risultato = pariDispari ){
-    document.getElementById('pari-dispari').innerHTML = 'l utente ha vinto'
+    document.getElementById('pari-dispari').innerHTML = 'l utente ha vinto';
 }
 
 if(risultato != pariDispari ){
-    document.getElementById('pari-dispari').innerHTML = 'l utente ha perso'
+    document.getElementById('pari-dispari').innerHTML = 'l utente ha perso';
 }
